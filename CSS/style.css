@@ -1,0 +1,180 @@
+body {
+  background: linear-gradient(0deg, #4b35ca 0%, hsl(283, 74%, 16%) 100%);
+  -webkit-animation-delay: 0.1s;
+    -webkit-animation-name: fontfix;
+    -webkit-animation-duration: 0.1s;
+    -webkit-animation-iteration-count: 1;
+    -webkit-animation-timing-function: linear;
+}
+
+@-webkit-keyframes fontfix {
+    from { opacity: 1; }
+    to   { opacity: 1; }
+}
+
+canvas {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+}
+
+.universe {
+    width: 100vw;
+    height: 100vh;
+    overflow: visible;
+    background-image: url("../Assets/universe.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.page {
+    display: flex;
+    flex-direction: column;
+    padding: 2%;
+}
+
+.top {
+    display: flex;
+    align-items: center;
+    margin-bottom: 5%;
+}
+
+.top #title-text {
+    font-weight: 700;
+    font-family: "Inter-Bold", "Inter", sans-serif;
+    color: #cfb8af;
+    font-size: 6rem;
+}
+
+.ph-hourglass-medium {
+    color: rgb(146, 87, 234);
+    font-size: 200px;
+    -ms-transform: rotate(-52deg); /* IE 9 */
+    transform: rotate(-52deg);
+    margin-right: 50px;
+}
+
+.ph-arrow-bend-down-right {
+    color: lightgray;
+    font-size: 200px;
+}
+
+.title-and-text {
+    display: flex;
+    justify-content: center;
+    margin-left: 5%;
+    flex-direction: column;
+}
+
+.title-and-text #title {
+    color: white;
+    font-size: 72px;
+    font-family: 'Shizuru', cursive;
+    margin-bottom: 25px;
+}
+
+.title-and-text #text {
+    color: lightgray;
+    opacity: .5;
+    font-size: 48px;
+    font-family: 'Lato', sans-serif;
+}
+
+.arrow-and-button {
+    display: flex;
+    margin-left: 10%;
+}
+
+.discord-link-button {
+    height: 400px;
+    width: 400px;
+    color: whitesmoke;
+    background: darkslateblue;
+    border-radius: 30px;
+    margin-left: 3%;
+    margin-top: 3%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: 1s;
+}
+
+.discord-link-button:hover {
+    transform: scale(1.05);
+}
+
+
+.discord-link-button img {
+    transform: scale(0.5);
+}
+
+.layer {
+    position: absolute;
+    border-radius: 50%;
+}
+
+.oneP {
+    background-color: rgba(255, 255, 255, 0.08);
+    top: 10%;
+    right: 20%;
+    width: 250px;
+    height: 250px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#moon-shadow {
+    background-color: rgb(97, 97, 97);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 185px;
+    width: 195px;
+    border-radius: 50%;
+}
+
+#moon {
+    background-color: rgb(165, 165, 165);
+    height: 180px;
+    width: 180px;
+    border-radius: 50%;
+}
+
+.twoP {
+    background-color: rgba(255, 255, 255, 0.08);
+    top: 55%;
+    right: 20%;
+    width: 230px;
+    height: 230px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#red-planet {
+    height: 200px;
+    width: 200px;
+    border-radius: 50%;
+    background-color: rgb(57, 46, 59);
+}
+
+.threeP {
+    background-color: rgba(255, 255, 255, 0.08);
+    top: 28%;
+    right: 28%;
+    width: 330px;
+    height: 330px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#blue-planet {
+    height: 300px;
+    width: 300px;
+    border-radius: 50%;
+    background-color: rgb(49, 58, 71);
+}

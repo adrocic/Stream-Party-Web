@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Stream-Party.io</title>
+    <link rel="stylesheet" href="CSS/style.css" />
+    <link rel="stylesheet" href="CSS/reset.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lato&family=Shizuru&display=swap"
+      rel="stylesheet"
+    />
+    <script src="https://unpkg.com/phosphor-icons"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/lodash.js/4.17.11/lodash.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@widgetbot/crate@3" async defer>
+      new Crate({
+        server: '942263758422704208',
+        channel: '942263758422704211',
+        defer: false,
+        css: 'button:hover { transform: scale(1.5)}'
+      });
+    </script>
+  </head>
+  <body>
+    <script src="index.js"></script>
+    <script src="JS/space.js"></script>
+    <canvas></canvas>
+    <div class="universe" id="universe">
+      <div class="page">
+        <div class="top">
+          <i class="ph-hourglass-medium"></i>
+          <div id="title-text">Stream-Party.io</div>
+        </div>
+        <div class="main-content">
+          <div class="main-content-left">
+            <div class="title-and-text">
+              <div id="title">Add To Discord</div>
+              <div id="text">
+                Watch, laugh, enjoy synchronized <br />
+                playback with your friends.
+              </div>
+            </div>
+            <div class="arrow-and-button">
+              <i class="ph-arrow-bend-down-right"></i>
+              <a
+                class="discord-link-button"
+                href="https://discord.com/api/oauth2/authorize?client_id=941568350268563516&permissions=8&scope=bot%20applications.commands"
+                target="_blank"
+              >
+                <img src="Assets/icon.png" />
+              </a>
+            </div>
+          </div>
+          <div class="main-content-right">
+            <div alt="moon-light" class="layer oneP" data-speed="-1">
+                <div alt="moon-shadow" id="moon-shadow">
+                    <div alt="moon" id="moon"></div>
+                </div>
+            </div>
+            <div alt="red-planet" class="layer twoP" data-speed="1">
+                <div alt="red-planet" id="red-planet"></div>
+            </div>
+            <div alt="blue-planet" class="layer threeP" data-speed="3">
+                <div alt="blue-planet" id="blue-planet"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
+
+<!-- https://discord.com/api/oauth2/authorize?client_id=941568350268563516&permissions=8&scope=bot%20applications.commands -->
